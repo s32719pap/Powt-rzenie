@@ -1,8 +1,7 @@
 #!/bin/bash
 
 parametr1="2022|2023"
-parametr2=$2
-parametr3=$3
+parametr2_3="[0-9]+"
 
 if [ $# != 3 ]
 then
@@ -16,7 +15,17 @@ echo "Zły wybór roku"
 exit 2
 fi
 
+if ! [[ $2 =~ $parametr2_3 ]]
+then 
+echo "Parametr 2 musi być liczbą"
+exit 3
+fi
 
+if ! [[ $3 =~ $paramentr2_3 ]]
+then
+echo "Parametr 3 musi być Liczbą"
+exit 4
+fi
 
 mkdir 'Kartki Świąteczne' 'Pozostałe' 'Prace domowe' 'Zadania'
 cd 'Kartki Świąteczne'
@@ -47,4 +56,8 @@ mv 'Lista zakupów 2023.txt' ../'Listy zakupów'/'Święta 2023'
 
 cd ../'Listy zakupów'/'Święta $1'
 egrep '[1-9]+\s(kg)\s' 'Lista zakupów $1.txt' > ../'Ciężkie zakupy.txt'
+
+cd ..
+head -$2 'Ciężkie zakupy.txt' | tail -$3 > 'Wybrane zakupy.txt'
+
 
