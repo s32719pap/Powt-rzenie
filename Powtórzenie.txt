@@ -1,0 +1,22 @@
+s32719@szuflandia22:~/UKOS$ mkdir powtórzenie
+s32719@szuflandia22:~/UKOS$ cd powtórzenie
+s32719@szuflandia22:~/UKOS/powtórzenie$ git init
+s32719@szuflandia22:~/UKOS/powtórzenie$ touch skrypt.sh
+s32719@szuflandia22:~/UKOS/powtórzenie$ git add skrypt.sh
+s32719@szuflandia22:~/UKOS/powtórzenie$ chmod 755 skrypt.sh
+s32719@szuflandia22:~/UKOS/powtórzenie$ git commit -m "Utworzono skrypt"
+s32719@szuflandia22:~/UKOS/powtórzenie$ git status
+s32719@szuflandia22:~/UKOS/powtórzenie$ git log
+s32719@szuflandia22:~/UKOS/powtórzenie$ git remote add origin git@github.com:s32719pap/Powt-rzenie.git
+s32719@szuflandia22:~/UKOS/powtórzenie$ cd ..
+s32719@szuflandia22:~/UKOS$ mkdir ~/.ssh
+s32719@szuflandia22:~/UKOS$ cd ..
+s32719@szuflandia22:~$ ls -la
+s32719@szuflandia22:~$ ssh-keygen -t ed25519 -C s32719@pjwstk.edu.pls32719@szuflandia22:~$ cat ~/.ssh/id_ed25519.pub
+s32719@szuflandia22:~$ cd UKOS/powtórzenie
+s32719@szuflandia22:~/UKOS/powtórzenie$ git push origin master
+s32719@szuflandia22:~/UKOS/powtórzenie$ git checkout -b test
+s32719@szuflandia22:~/UKOS/powtórzenie$ git branch
+s32719@szuflandia22:~/UKOS/powtórzenie$ git checkout masters32719@szuflandia22:~/UKOS/powtórzenie$ touch Powtórzenie.txt
+s32719@szuflandia22:~/UKOS/powtórzenie$ nano Powtórzenie.txt
+
