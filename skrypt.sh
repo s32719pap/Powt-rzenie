@@ -45,3 +45,6 @@ bułka tarta
 mv 'Lista zakupów 2022.txt' ../'Listy zakupów'/'Święta 2022'
 mv 'Lista zakupów 2023.txt' ../'Listy zakupów'/'Święta 2023'
 
+cd ../'Listy zakupów'/'Święta $1'
+egrep '[1-9]+\s(kg)\s' 'Lista zakupów $1.txt' > ../'Ciężkie zakupy.txt'
+
