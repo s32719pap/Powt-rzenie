@@ -60,4 +60,8 @@ egrep '[1-9]+\s(kg)\s' 'Lista zakupów $1.txt' > ../'Ciężkie zakupy.txt'
 cd ..
 head -$2 'Ciężkie zakupy.txt' | tail -$3 > 'Wybrane zakupy.txt'
 
+indeks='whoami'
+data='date +%Y-%m-%d'
 
+cd ../..
+tar -czf Powtórzenie_$data_$indeks.tar.gz Powtórzenie*
