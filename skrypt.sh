@@ -42,3 +42,6 @@ bułka tarta
 1 kg cukru
 1 l barszczu w kartonie" > 'Lista zakupów $1.txt'
 
+mv 'Lista zakupów 2022.txt' ../'Listy zakupów'/'Święta 2022'
+mv 'Lista zakupów 2023.txt' ../'Listy zakupów'/'Święta 2023'
+
